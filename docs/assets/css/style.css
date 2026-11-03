@@ -588,7 +588,6 @@ img[src$="logo.webp"] { content: url("../img/logo-trasparente.webp"); background
 .team-section .avatar-link { position: absolute; inset: 0; display: block; border-radius: 50%; cursor: pointer; }
 .team-section .avatar.photo { transition: box-shadow .3s, border-color .3s; }
 .team-section .member:hover .avatar.photo, .team-section .avatar.photo:focus-within { border-color: var(--giallo); box-shadow: 0 0 0 4px rgba(255,218,106,.45); }
-.team-section .member:hover .avatar-link::after { transform: scale(1.12); }
 .team-section .name-link { color: var(--navy); text-decoration: underline; text-decoration-color: var(--azzurro); text-decoration-thickness: 2px; text-underline-offset: 6px; transition: color .2s, text-decoration-color .2s; }
 .team-section .name-link::after { content: " \2197"; font-size: .6em; color: var(--azzurro); vertical-align: super; }
 .team-section .name-link:hover, .team-section .name-link:focus-visible { color: var(--azzurro); text-decoration-color: var(--giallo); }
