@@ -586,11 +586,6 @@ img[src$="logo.webp"] { content: url("../img/logo-trasparente.webp"); background
 
 /* team: foto e nomi cliccabili (link LinkedIn) */
 .team-section .avatar-link { position: absolute; inset: 0; display: block; border-radius: 50%; cursor: pointer; }
-.team-section .avatar-link::after {
-  content: "in"; position: absolute; right: 14px; bottom: 14px; width: 36px; height: 36px; border-radius: 50%;
-  background: #0a66c2; color: #fff; font: 700 17px/36px var(--f-head); text-align: center;
-  box-shadow: 0 2px 8px rgba(7,40,74,.35); transition: transform .25s;
-}
 .team-section .avatar.photo { transition: box-shadow .3s, border-color .3s; }
 .team-section .member:hover .avatar.photo, .team-section .avatar.photo:focus-within { border-color: var(--giallo); box-shadow: 0 0 0 4px rgba(255,218,106,.45); }
 .team-section .member:hover .avatar-link::after { transform: scale(1.12); }
