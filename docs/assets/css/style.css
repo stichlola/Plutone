@@ -373,7 +373,8 @@ section { padding: clamp(64px, 9vw, 110px) 0; }
 .site-footer a:hover { color: var(--giallo); }
 .foot-bottom { margin-top: 56px; border-top: 1px solid rgba(255,255,255,.12); padding: 20px 0; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 13px; color: #9fbfe2; }
 .foot-bottom a { color: #9fbfe2; }
-.foot-bottom p, .foot-bottom > span { opacity: .6; }
+.foot-bottom p, .foot-bottom > span { opacity: .6; margin: 0; font-size: 12px; line-height: 1.4; }
+.foot-bottom { margin-top: 32px; padding: 12px 0 14px; gap: 2px; }
 .foot-bottom nav { display: flex; gap: 20px; }
 
 /* ---------- Reveal ---------- */
