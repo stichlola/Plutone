@@ -554,6 +554,16 @@ sup.ai { color: var(--azzurro); font-size: .7em; margin-left: 1px; }
 /* footer: giustifica i testi lunghi (descrizione e newsletter) */
 .foot-grid.v2 .foot-brand p, .foot-news > p { text-align: justify; hyphens: auto; }
 
+/* footer (computer): titoli e linee allineati sulla stessa riga in tutte le colonne */
+@media (min-width: 1101px) {
+  .foot-grid.v2 { grid-template-columns: 1.1fr 1fr 1fr 1.15fr 1.2fr; column-gap: 28px; row-gap: 0; grid-template-rows: auto auto auto auto; }
+  .foot-grid.v2 > * { grid-row: 1 / span 4; }
+  .foot-grid.v2 > div:nth-child(2), .foot-grid.v2 > div:nth-child(3) { display: grid; grid-template-rows: subgrid; }
+  .foot-grid.v2 > div:nth-child(2) > h4, .foot-grid.v2 > div:nth-child(3) > h4 { margin-top: 0; }
+  .foot-grid.v2 > div:nth-child(2) > h4:nth-of-type(2), .foot-grid.v2 > div:nth-child(3) > h4:nth-of-type(2) { margin-top: 26px; }
+  .site-footer h4 { white-space: nowrap; font-size: 18px; }
+}
+
 @media (max-width: 1100px) { .foot-grid.v2 { grid-template-columns: 1fr 1fr 1fr; } }
 @media (max-width: 880px) {
   .ideas, .services, .benefits, .benefits.two, .spaces, .commit, .about, .contact-split { grid-template-columns: 1fr; }
