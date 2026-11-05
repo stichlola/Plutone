@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://plutone.vercel.app/sitemap.xml
