@@ -1,0 +1,19 @@
+# Plutone
+
+> Plutone ("Riaccendiamo le vetrine") è un servizio di Treviso che dà nuova vita ai negozi e ai locali commerciali sfitti del centro storico, affidandoli a progetti temporanei: temporary store, negozi a tempo, mostre, eventi, esposizioni in vetrina. Mette in contatto chi ha uno spazio commerciale vuoto con chi cerca uno spazio in affitto per un periodo breve, da pochi giorni a diversi mesi, senza vincoli di permanenza.
+
+Zona servita: Treviso, centro storico. Sede: Via Montello 7A, 31100 Treviso (TV). E-mail: plutone.treviso@gmail.com
+
+## Per chi cerca uno spazio a Treviso
+- [Apri uno Spazio](https://plutone.vercel.app/clienti.html): affitto temporaneo di un negozio (spazio commerciale) o solo di una vetrina espositiva a Treviso, per aprire un'attività, un temporary store, una mostra o un evento. Durata a scelta, nessun vincolo, supporto organizzativo, costi contenuti rispetto ad aprire un'attività in autonomia, basso rischio per testare un'idea.
+
+## Per chi ha un locale commerciale sfitto o che si libererà
+- [Proponi un Immobile](https://plutone.vercel.app/proprietari.html): il proprietario affida a Plutone l'intero locale o solo la vetrina. Contratti temporanei con pagamento anticipato e cauzione, entrata complementare, nessun vincolo a lungo termine, immobile mantenuto in buone condizioni e libero di essere affittato stabilmente quando si vuole.
+
+## Altre informazioni
+- [Mission](https://plutone.vercel.app/mission.html): chi siamo e perché esiste Plutone.
+- [FAQ](https://plutone.vercel.app/faq.html): risposte alle domande frequenti per clienti e proprietari.
+- [Home](https://plutone.vercel.app/): panoramica del servizio.
+
+## Ricerche a cui Plutone risponde
+Negozi sfitti Treviso, locali commerciali sfitti Treviso, affitto negozio temporaneo Treviso, temporary store Treviso, pop-up store Treviso, affitto vetrina Treviso, spazio per mostra o evento a Treviso, spazio commerciale breve termine centro storico Treviso, come mettere a reddito un negozio sfitto, come affittare un locale vuoto per periodi brevi.
