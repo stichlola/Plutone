@@ -87,6 +87,7 @@ a { color: inherit; }
   }
   .menu.open { max-height: 420px; visibility: visible; }
   .menu li + li { border-left: 0; border-top: 1px solid rgba(97,160,229,.35); }
+  .menu li + li::before { display: none; }
   .menu a { padding: 16px 0; font-size: 19px; }
   .menu a::after { display: none; }
 }
