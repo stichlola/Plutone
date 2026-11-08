@@ -350,6 +350,11 @@ section { padding: clamp(64px, 9vw, 110px) 0; }
 /* CTA band */
 .cta-band { background: var(--navy); color: #fff; border-radius: calc(var(--radius) + 6px); padding: clamp(36px, 6vw, 64px); display: grid; grid-template-columns: 1.4fr auto; gap: 30px; align-items: center; position: relative; overflow: hidden; }
 .cta-band::before { content: ""; position: absolute; right: -80px; bottom: -160px; width: 420px; height: 420px; border-radius: 50%; background: radial-gradient(circle, rgba(255,218,106,.5), rgba(255,218,106,0) 65%); }
+.cta-band::before { animation: respiro 4.5s ease-in-out infinite; }
+@keyframes respiro {
+  0%, 100% { opacity: .55; transform: translate(0, 0) scale(.9); }
+  50% { opacity: 1; transform: translate(-50px, -26px) scale(1.2); }
+}
 .cta-band h2 { font-family: var(--f-display); font-weight: 400; font-size: clamp(30px, 4vw, 46px); margin: 0 0 10px; line-height: 1.1; position: relative; }
 .cta-band p { margin: 0; color: #cfe0f4; position: relative; }
 .cta-band .btn-row { position: relative; }
