@@ -120,7 +120,7 @@
   var base = EN ? "../" : "";
 
   // Impostazioni dal pannello admin (solo se il sito gira con il server)
-  fetch("api/impostazioni").then(function (r) { return r.ok ? r.json() : null; }).then(function (s) {
+  fetch(base + "api/impostazioni").then(function (r) { return r.ok ? r.json() : null; }).then(function (s) {
     if (!s) return;
     if (s.email) contactEmail = s.email;
     document.querySelectorAll("[data-setting]").forEach(function (el) {
