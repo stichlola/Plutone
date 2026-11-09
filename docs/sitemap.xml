@@ -48,5 +48,20 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/privacy.html"/>
   </url>
-  <url><loc>https://plutone.vercel.app/news.html</loc></url>
+  <url><loc>https://plutone.vercel.app/news.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/news.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/news.html"/>
+  </url>
+  <url><loc>https://plutone.vercel.app/en/news.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/news.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/news.html"/>
+  </url>
+  <url><loc>https://plutone.vercel.app/contatti.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/contatti.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/contatti.html"/>
+  </url>
+  <url><loc>https://plutone.vercel.app/en/contatti.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/contatti.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/contatti.html"/>
+  </url>
 </urlset>
