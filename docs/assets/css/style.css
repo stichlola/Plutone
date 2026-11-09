@@ -73,7 +73,7 @@ a { color: inherit; }
 .menu a:hover::after, .menu a[aria-current="page"]::after { transform: scaleX(1); }
 .menu a[aria-current="page"] { color: var(--giallo); }
 @media (min-width: 881px) {
-  .menu li:not(.lang) a[href="clienti.html"] { color: var(--giallo); border-radius: 999px; margin: 0 8px; animation: luce-pulsa 3.2s ease-in-out infinite; }
+  .menu li:not(.lang) a[href="apri-uno-spazio.html"], .menu li:not(.lang) a[href="open-a-space.html"] { color: var(--giallo); border-radius: 999px; margin: 0 8px; animation: luce-pulsa 3.2s ease-in-out infinite; }
   .menu li:not(.lang) a[href="clienti.html"]::after { display: none; }
 }
 @keyframes luce-pulsa {
