@@ -265,7 +265,7 @@
         "#cookie-banner p{margin:0;color:#fff;flex:1 1 380px}#cookie-banner a{color:#ffd54a;text-decoration:underline}" +
         "#cookie-banner .cb-row{display:flex;gap:8px;flex-wrap:nowrap}" +
         "#cookie-banner button{font:inherit;font-weight:600;cursor:pointer;border-radius:999px;padding:4px 14px;border:1.5px solid #ffd54a}" +
-        "@media(max-width:600px){#cookie-banner{left:10px;right:10px;bottom:8px;padding:6px 10px;font-size:.68rem;line-height:1.3;gap:6px}#cookie-banner button{padding:3px 11px;font-size:.7rem}}" +
+        "@media(max-width:600px){#cookie-banner{left:10px;right:10px;bottom:8px;padding:8px 12px;font-size:.74rem;line-height:1.35;gap:7px}#cookie-banner button{padding:4px 13px;font-size:.76rem}}" +
         "#cookie-banner .cb-yes{background:#ffd54a;color:#0b1a3a}#cookie-banner .cb-no{background:transparent;color:#ffd54a}";
       document.head.appendChild(st);
     }
