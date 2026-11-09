@@ -209,7 +209,7 @@
       }
       function viaMail() {
         var who = form.querySelector("[data-subject]");
-        var intro = "Questa e-mail è stata generata automaticamente dalla compilazione del modulo sul sito di Plutone.\nPer completare la richiesta è sufficiente cliccare su Invia: non è necessario fare altro.\n" + (/newsletter/i.test(tipo) ? "Grazie mille." : "Grazie per averci scritto: ti risponderemo al più presto.") + "\n\n---\n\n";
+        var intro = EN ? "This e-mail was generated automatically by filling in the form on the Plutone website.\nTo complete your request just click Send: nothing else is needed.\n" + (/newsletter/i.test(tipo) ? "Thank you." : "Thank you for writing to us: we will reply as soon as possible.") + "\n\n---\n\n" : "Questa e-mail è stata generata automaticamente dalla compilazione del modulo sul sito di Plutone.\nPer completare la richiesta è sufficiente cliccare su Invia: non è necessario fare altro.\n" + (/newsletter/i.test(tipo) ? "Grazie mille." : "Grazie per averci scritto: ti risponderemo al più presto.") + "\n\n---\n\n";
         var subject = "[Plutone] " + tipo + (who && who.value ? " - " + who.value : "");
         window.location.href = "mailto:" + contactEmail + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(intro + lines.join("\n"));
         done(false);
