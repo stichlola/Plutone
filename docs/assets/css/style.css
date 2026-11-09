@@ -642,6 +642,10 @@ img[src$="logo.webp"] { content: url("../img/logo-trasparente.webp"); background
   .nav { justify-content: space-between; }
   .brand { margin-right: 24px; }
 }
+/* schermi larghi: il menu finisce dove finisce l'arco (l'arco ha un margine interno a destra) */
+@media (min-width: 1400px) {
+  .site-header .nav { padding-right: 7vw; }
+}
 @media (min-width: 1181px) and (max-width: 1500px) {
   .menu a { padding: 4px 18px; font-size: 16px; letter-spacing: .06em; }
   .menu a::after { left: 18px; right: 18px; }
