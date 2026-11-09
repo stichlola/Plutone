@@ -634,6 +634,20 @@ img[src$="logo.webp"] { content: url("../img/logo-trasparente.webp"); background
 
 /* menu: le voci restano su una riga sola; su schermi medi si stringono */
 .menu a { white-space: nowrap; }
+.brand { flex-shrink: 0; margin-right: 24px; }
+.menu { flex-shrink: 1; }
+.site-header .container { max-width: 1400px; }
+@media (min-width: 1181px) and (max-width: 1500px) {
+  .menu a { padding: 4px 18px; font-size: 16px; letter-spacing: .06em; }
+  .menu a::after { left: 18px; right: 18px; }
+  .menu li:last-child a::after { right: 0; }
+  .menu li.lang a { padding: 4px 6px; }
+  .menu li.lang a:first-child { padding-left: 18px; }
+  .menu li.lang a:last-child { padding-right: 0; }
+  .menu li.lang a::after { left: 6px; right: 6px; }
+  .menu li.lang a:first-child::after { left: 18px; }
+  .menu li.lang a:last-child::after { right: 0; }
+}
 @media (min-width: 881px) and (max-width: 1180px) {
   .menu a { padding: 4px 14px; font-size: 15px; letter-spacing: .05em; }
   .menu a::after { left: 14px; right: 14px; }
