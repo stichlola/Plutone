@@ -751,3 +751,9 @@ img[src$="logo.webp"] { content: url("../img/logo-trasparente.webp"); background
   background-image: radial-gradient(circle closest-side, #fffbe6 0%, rgba(255,239,175,.92) 20%, rgba(255,232,150,.55) 45%, rgba(255,232,150,.2) 74%, rgba(255,232,150,0) 100%);
   background-repeat: no-repeat; background-size: 52% 52%; background-position: 47.5% 30.2%;
 }
+
+/* home inglese: lo slogan è più lungo dell'italiano, quindi lo riduco per occupare la stessa larghezza e tenere uguale l'altezza del blocco (e dell'arco) */
+html[lang="en"] .hero .tagline { font-size: clamp(18px, 2.6vw, 35px); white-space: nowrap; }
+@media (max-width: 880px) {
+  html[lang="en"] .hero .tagline { white-space: normal; }
+}
