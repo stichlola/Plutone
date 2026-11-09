@@ -73,9 +73,12 @@ a { color: inherit; }
 .menu a:hover::after, .menu a[aria-current="page"]::after { transform: scaleX(1); }
 .menu a[aria-current="page"] { color: var(--giallo); }
 @media (min-width: 881px) {
-  .menu li a[href="clienti.html"] { color: var(--giallo); border: 1.5px solid var(--giallo); border-radius: 999px; margin: 0 8px; transition: background .25s, color .25s; }
+  .menu li a[href="clienti.html"] { color: var(--giallo); border-radius: 999px; margin: 0 8px; animation: luce-pulsa 3.2s ease-in-out infinite; }
   .menu li a[href="clienti.html"]::after { display: none; }
-  .menu li a[href="clienti.html"]:hover, .menu li a[href="clienti.html"][aria-current="page"] { background: var(--giallo); color: var(--navy); }
+}
+@keyframes luce-pulsa {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255,218,106,0), 0 0 6px 0 rgba(255,218,106,.12); }
+  50% { box-shadow: 0 0 0 2px rgba(255,218,106,.18), 0 0 18px 4px rgba(255,218,106,.55); }
 }
 .burger { display: none; background: none; border: 0; padding: 8px; cursor: pointer; }
 .burger span { display: block; width: 26px; height: 2px; background: var(--bianco); margin: 6px 0; transition: transform .3s, opacity .3s; }
