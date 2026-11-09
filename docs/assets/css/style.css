@@ -619,9 +619,9 @@ img[src$="logo.webp"] { content: url("../img/logo-trasparente.webp"); background
 .team-section .name-link:hover, .team-section .name-link:focus-visible { color: var(--azzurro); text-decoration-color: var(--giallo); }
 
 /* contatto WhatsApp nel footer */
-.site-footer .wa-link { display: inline-flex; align-items: center; gap: 6px; color: #25D366; font-weight: 400 !important; font-size: 14.5px; line-height: 1.45; }
+.site-footer .wa-link { display: inline-flex; align-items: center; gap: 6px; color: #e6eef8 !important; font-weight: 400 !important; font-size: 14.5px; line-height: 1.45; transition: color .25s, text-shadow .25s; }
 .site-footer .wa-link svg { width: 16px !important; height: 16px !important; flex-shrink: 0; }
-.site-footer .wa-link:hover, .site-footer .wa-link:focus-visible { color: #5ae58f; }
+.site-footer .wa-link:hover, .site-footer .wa-link:focus-visible { color: #25D366 !important; text-shadow: 0 0 12px rgba(37,211,102,.55); }
 
 /* social nel footer: icone in cerchio, si illuminano al passaggio come i box blu */
 .site-footer .social-icons { display: flex; gap: 12px; flex-wrap: wrap; }
