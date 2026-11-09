@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    { "source": "/clienti.html", "destination": "/apri-uno-spazio", "permanent": true },
+    { "source": "/en/clienti.html", "destination": "/en/open-a-space", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/apri-uno-spazio", "destination": "/clienti.html" },
+    { "source": "/en/open-a-space", "destination": "/en/clienti.html" }
+  ]
+}
