@@ -623,6 +623,24 @@ img[src$="logo.webp"] { content: url("../img/logo-trasparente.webp"); background
 .site-footer .wa-link svg { width: 16px !important; height: 16px !important; flex-shrink: 0; }
 .site-footer .wa-link:hover, .site-footer .wa-link:focus-visible { color: #25D366 !important; text-shadow: 0 0 12px rgba(37,211,102,.55); }
 
+/* Stories: scheda di rimando a un articolo esterno */
+.stories-list { display: grid; gap: 28px; max-width: 920px; }
+.story-card { display: grid; grid-template-columns: 300px 1fr; background: var(--bianco); border-radius: var(--radius); overflow: hidden; border: 1px solid rgba(7,40,74,.06); text-decoration: none; color: inherit; transition: transform .3s, box-shadow .3s; }
+.story-card:hover, .story-card:focus-visible { transform: translateY(-6px); box-shadow: var(--shadow); }
+.story-card .story-media { background: radial-gradient(circle at 50% 40%, rgba(255,218,106,.35), rgba(255,218,106,0) 60%), linear-gradient(160deg, var(--navy-2), var(--navy)); display: grid; place-items: center; padding: 28px; min-height: 200px; }
+.story-card .story-media img { width: 150px; height: 150px; object-fit: contain; transition: transform .6s; }
+.story-card:hover .story-media img { transform: scale(1.06); }
+.story-card .body { padding: 28px 32px 30px; display: flex; flex-direction: column; }
+.story-card .story-meta { font-family: var(--f-label); font-size: 14px; letter-spacing: .06em; color: var(--azzurro); margin: 12px 0 0; }
+.story-card h2 { font-family: var(--f-display); font-weight: 400; font-size: clamp(24px, 2.6vw, 32px); line-height: 1.2; margin: 14px 0 10px; color: var(--navy); }
+.story-card p { margin: 0 0 18px; color: var(--grigio); }
+.story-card .link-arrow { margin-top: auto; }
+.story-card:hover .link-arrow .arrow { transform: translateX(4px); }
+@media (max-width: 700px) {
+  .story-card { grid-template-columns: 1fr; }
+  .story-card .story-media { min-height: 160px; }
+}
+
 /* social nel footer: icone in cerchio, si illuminano al passaggio come i box blu */
 .site-footer .social-icons { display: flex; gap: 12px; flex-wrap: wrap; }
 .site-footer .social-icons li { margin: 0; }
