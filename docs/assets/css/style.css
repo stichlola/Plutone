@@ -580,7 +580,7 @@ sup.ai { color: var(--azzurro); font-size: .7em; margin-left: 1px; }
 .foot-news .form-done .big { font-size: 22px; }
 .foot-bottom { flex-direction: column; align-items: center; text-align: center; }
 /* footer: giustifica i testi lunghi (descrizione e newsletter) */
-.foot-grid.v2 .foot-brand p, .foot-news > p { text-align: justify; hyphens: auto; }
+.foot-grid.v2 .foot-brand p, .foot-news > p { text-align: justify; hyphens: none; }
 
 /* footer (computer): titoli e linee allineati sulla stessa riga in tutte le colonne */
 @media (min-width: 1101px) {
