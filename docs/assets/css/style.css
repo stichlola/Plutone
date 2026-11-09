@@ -618,6 +618,20 @@ img[src$="logo.webp"] { content: url("../img/logo-trasparente.webp"); background
 .team-section .name-link::after { content: " \2197"; font-size: .6em; color: var(--azzurro); vertical-align: super; }
 .team-section .name-link:hover, .team-section .name-link:focus-visible { color: var(--azzurro); text-decoration-color: var(--giallo); }
 
+/* selettore lingua IT | EN nel menu: sulla stessa riga */
+.menu li.lang { display: flex; flex-direction: row; align-items: center; flex-wrap: nowrap; white-space: nowrap; }
+.menu li.lang a { display: inline-block; padding: 4px 8px; }
+.menu li.lang a:first-child { padding-left: 26px; }
+.menu li.lang a:last-child { padding-right: 0; }
+.menu li.lang a::after { left: 8px; right: 8px; }
+.menu li.lang a:first-child::after { left: 26px; }
+.menu li.lang a:last-child::after { right: 0; }
+.menu li.lang .sep { color: rgba(159,191,226,.6); font-family: var(--f-label); }
+@media (max-width: 880px) {
+  .menu li.lang a, .menu li.lang a:first-child { padding: 16px 10px 16px 0; }
+  .menu li.lang a:last-child { padding-left: 10px; }
+}
+
 /* contatto WhatsApp nel footer */
 .site-footer .wa-link { display: inline-flex; align-items: center; gap: 6px; color: #e6eef8 !important; font-weight: 400 !important; font-size: 14.5px; line-height: 1.45; transition: color .25s, text-shadow .25s; }
 .site-footer .wa-link svg { width: 16px !important; height: 16px !important; flex-shrink: 0; }
