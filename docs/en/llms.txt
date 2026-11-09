@@ -7,7 +7,7 @@ Area served: Treviso, historic centre. Address: Via Montello 7A, 31100 Treviso (
 The full website is also available in Italian: https://plutone.vercel.app/llms.txt
 
 ## For those looking for a space in Treviso
-- [Open a Space](https://plutone.vercel.app/clienti.html) (page in Italian): temporary rental of a shop (retail space) or just a display window in Treviso, to open a business, a pop-up store, an exhibition or an event. Duration of your choice, no commitment, organisational support, lower costs than opening a business on your own, low risk to test an idea.
+- [Open a Space](https://plutone.vercel.app/en/clienti.html): temporary rental of a shop (retail space) or just a display window in Treviso, to open a business, a pop-up store, an exhibition or an event. Duration of your choice, no commitment, organisational support, lower costs than opening a business on your own, low risk to test an idea.
 
 ## For owners of vacant commercial premises
 - [List a Property](https://plutone.vercel.app/proprietari.html) (page in Italian): the owner entrusts Plutone with the whole premises or just the window. Temporary contracts with advance payment and deposit, additional income, no long-term commitment, property kept in good condition and free to be let permanently whenever the owner wishes.
