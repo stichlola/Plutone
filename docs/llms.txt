@@ -4,6 +4,8 @@
 
 Zona servita: Treviso, centro storico. Sede: Via Montello 7A, 31100 Treviso (TV). E-mail: plutone.treviso@gmail.com
 
+English version: [Plutone in English](https://plutone.vercel.app/en/) · https://plutone.vercel.app/en/llms.txt
+
 ## Per chi cerca uno spazio a Treviso
 - [Apri uno Spazio](https://plutone.vercel.app/clienti.html): affitto temporaneo di un negozio (spazio commerciale) o solo di una vetrina espositiva a Treviso, per aprire un'attività, un temporary store, una mostra o un evento. Durata a scelta, nessun vincolo, supporto organizzativo, costi contenuti rispetto ad aprire un'attività in autonomia, basso rischio per testare un'idea.
 
