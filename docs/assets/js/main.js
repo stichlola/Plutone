@@ -201,7 +201,9 @@
         if (!box) return;
         if (viaServer) {
           var msg = box.querySelector("[data-server-msg]") || box.querySelector("p:last-child");
-          if (msg) msg.textContent = /newsletter/i.test(tipo) ? "Iscrizione registrata: riceverai le prossime novità di Plutone." : "Messaggio inviato! Ti risponderemo al più presto.";
+          if (msg) msg.textContent = EN
+            ? (/newsletter/i.test(tipo) ? "Subscription registered: you will receive Plutone's next news." : "Message sent! We will reply as soon as possible.")
+            : (/newsletter/i.test(tipo) ? "Iscrizione registrata: riceverai le prossime novità di Plutone." : "Messaggio inviato! Ti risponderemo al più presto.");
         }
         box.classList.add("show");
       }
