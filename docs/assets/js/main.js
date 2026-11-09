@@ -261,10 +261,10 @@
     if (document.getElementById("cookie-banner")) return;
     if (!document.getElementById("cookie-style")) {
       var st = document.createElement("style"); st.id = "cookie-style";
-      st.textContent = "#cookie-banner{position:fixed;left:16px;right:16px;bottom:16px;max-width:560px;margin:0 auto;background:#0b1a3a;background:var(--navy,#0b1a3a);color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:18px 20px;z-index:9999;box-shadow:0 10px 30px rgba(0,0,0,.35);font-size:.92rem;line-height:1.5}" +
-        "#cookie-banner p{margin:0 0 12px;color:#fff}#cookie-banner a{color:#ffd54a;text-decoration:underline}" +
-        "#cookie-banner .cb-row{display:flex;gap:10px;flex-wrap:wrap}" +
-        "#cookie-banner button{font:inherit;font-weight:600;cursor:pointer;border-radius:999px;padding:9px 20px;border:1.5px solid #ffd54a}" +
+      st.textContent = "#cookie-banner{position:fixed;left:16px;right:16px;bottom:10px;max-width:1100px;margin:0 auto;background:#0b1a3a;background:var(--navy,#0b1a3a);color:#fff;border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:8px 14px;z-index:9999;box-shadow:0 4px 14px rgba(0,0,0,.25);font-size:.8rem;line-height:1.35;display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:space-between}" +
+        "#cookie-banner p{margin:0;color:#fff;flex:1 1 380px}#cookie-banner a{color:#ffd54a;text-decoration:underline}" +
+        "#cookie-banner .cb-row{display:flex;gap:8px;flex-wrap:nowrap}" +
+        "#cookie-banner button{font:inherit;font-weight:600;cursor:pointer;border-radius:999px;padding:4px 14px;border:1.5px solid #ffd54a}" +
         "#cookie-banner .cb-yes{background:#ffd54a;color:#0b1a3a}#cookie-banner .cb-no{background:transparent;color:#ffd54a}";
       document.head.appendChild(st);
     }
