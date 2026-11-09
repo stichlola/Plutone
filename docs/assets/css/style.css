@@ -752,6 +752,14 @@ img[src$="logo.webp"] { content: url("../img/logo-trasparente.webp"); background
   background-repeat: no-repeat; background-size: 52% 52%; background-position: 47.5% 30.2%;
 }
 
+/* telefono: meno spazio tra barra del menu, arco e titolo */
+@media (max-width: 880px) {
+  .hero { min-height: 0; display: block; }
+  .hero .container { gap: 0; padding-top: 4px; padding-bottom: 40px; }
+  .hero .hero-logo { width: min(300px, 70%); margin-bottom: -24px; }
+  .hero .container > div:first-child { margin-top: 0; }
+}
+
 /* home inglese: lo slogan è più lungo dell'italiano, quindi lo riduco per occupare la stessa larghezza e tenere uguale l'altezza del blocco (e dell'arco) */
 html[lang="en"] .hero .tagline { font-size: clamp(18px, 2.6vw, 35px); white-space: nowrap; }
 @media (max-width: 880px) {
