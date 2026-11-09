@@ -138,7 +138,7 @@
   // Locali disponibili dal pannello admin
   var localiBox = document.querySelector("[data-locali]");
   if (localiBox) {
-    fetch("api/locali").then(function (r) { return r.ok ? r.json() : null; }).then(function (list) {
+    fetch(base + "api/locali").then(function (r) { return r.ok ? r.json() : null; }).then(function (list) {
       if (!list) return;
       var pin = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 00-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg>';
       function card(l) {
