@@ -188,7 +188,7 @@
       if (!ok) { var first = form.querySelector(".invalid input, .invalid textarea, .invalid select"); if (first) first.focus(); return; }
       var campi = {}, lines = [];
       form.querySelectorAll("[data-label]").forEach(function (el) {
-        var v = el.type === "checkbox" ? (el.checked ? "Sì" : "No") : el.value;
+        var v = el.type === "checkbox" ? (el.checked ? (EN ? "Yes" : "Sì") : "No") : el.value;
         if (el.tagName === "SELECT" && el.selectedIndex > 0) v = el.options[el.selectedIndex].text;
         if (v) { campi[el.getAttribute("data-label")] = v; lines.push(el.getAttribute("data-label") + ": " + v); }
       });
