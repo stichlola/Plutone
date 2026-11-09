@@ -93,7 +93,13 @@ a { color: inherit; }
     background: var(--navy); padding: 8px var(--gutter) 24px;
     max-height: 0; overflow: hidden; visibility: hidden; transition: max-height .35s ease, visibility .35s;
   }
-  .menu.open { max-height: 420px; visibility: visible; }
+  .menu.open { max-height: 640px; visibility: visible; }
+  .menu li a[href="clienti.html"] {
+    background: var(--giallo); color: var(--navy); border-radius: 999px; text-align: center;
+    padding: 14px 20px; margin: 14px 0; font-weight: 700;
+    animation: luce-pulsa 3.2s ease-in-out infinite;
+  }
+  .menu li a[href="clienti.html"][aria-current="page"] { color: var(--navy); }
   .menu li + li { border-left: 0; border-top: 1px solid rgba(97,160,229,.35); }
   .menu li + li::before { display: none; }
   .menu a { padding: 16px 0; font-size: 19px; }
