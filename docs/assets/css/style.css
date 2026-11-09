@@ -643,11 +643,15 @@ img[src$="logo.webp"] { content: url("../img/logo-trasparente.webp"); background
   .brand { margin-right: 24px; }
 }
 /* schermi larghi: il menu finisce dove finisce l'arco (l'arco ha un margine interno a destra) */
+/* tutto il contenuto (intestazione e home) è spostato a destra di --shift per centrarlo: le proporzioni non cambiano */
 @media (min-width: 1181px) {
-  .site-header .nav { padding-right: calc(var(--gutter) + 7vw); }
+  :root { --shift: 3.5vw; }
+  .site-header .nav { padding-left: calc(var(--gutter) + var(--shift)); padding-right: calc(var(--gutter) + 7vw - var(--shift)); }
+  .hero .container > div { position: relative; left: var(--shift); }
 }
 @media (min-width: 1400px) {
-  .site-header .nav { padding-right: calc(56px + 101px); }
+  :root { --shift: 50px; }
+  .site-header .nav { padding-left: calc(56px + 50px); padding-right: calc(56px + 101px - 50px); }
 }
 @media (min-width: 1181px) and (max-width: 1500px) {
   .menu a { padding: 4px 18px; font-size: 16px; letter-spacing: .06em; }
