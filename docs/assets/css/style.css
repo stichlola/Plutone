@@ -94,7 +94,7 @@ a { color: inherit; }
     max-height: 0; overflow: hidden; visibility: hidden; transition: max-height .35s ease, visibility .35s;
   }
   .menu.open { max-height: 640px; visibility: visible; }
-  .menu li a[href="clienti.html"] {
+  .menu li:not(.lang) a[href="clienti.html"] {
     color: var(--giallo);
     display: inline-block; padding: 10px 24px; margin: 8px 0;
     border: 1px solid rgba(255,218,106,.55); border-radius: 999px;
