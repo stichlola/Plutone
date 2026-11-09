@@ -8,13 +8,13 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/"/>
   </url>
-  <url><loc>https://plutone.vercel.app/apri-uno-spazio</loc>
-    <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/apri-uno-spazio"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/open-a-space"/>
+  <url><loc>https://plutone.vercel.app/apri-uno-spazio.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/apri-uno-spazio.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/open-a-space.html"/>
   </url>
-  <url><loc>https://plutone.vercel.app/en/open-a-space</loc>
-    <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/apri-uno-spazio"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/open-a-space"/>
+  <url><loc>https://plutone.vercel.app/en/open-a-space.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/apri-uno-spazio.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/open-a-space.html"/>
   </url>
   <url><loc>https://plutone.vercel.app/proprietari.html</loc>
     <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/proprietari.html"/>
