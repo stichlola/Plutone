@@ -632,6 +632,21 @@ img[src$="logo.webp"] { content: url("../img/logo-trasparente.webp"); background
   .menu li.lang a:last-child { padding-left: 10px; }
 }
 
+/* menu: le voci restano su una riga sola; su schermi medi si stringono */
+.menu a { white-space: nowrap; }
+@media (min-width: 881px) and (max-width: 1180px) {
+  .menu a { padding: 4px 14px; font-size: 15px; letter-spacing: .05em; }
+  .menu a::after { left: 14px; right: 14px; }
+  .menu li:last-child a::after { right: 0; }
+  .menu li.lang a { padding: 4px 6px; }
+  .menu li.lang a:first-child { padding-left: 14px; }
+  .menu li.lang a:last-child { padding-right: 0; }
+  .menu li.lang a::after { left: 6px; right: 6px; }
+  .menu li.lang a:first-child::after { left: 14px; }
+  .menu li.lang a:last-child::after { right: 0; }
+  .brand span { font-size: 24px; }
+}
+
 /* contatto WhatsApp nel footer */
 .site-footer .wa-link { display: inline-flex; align-items: center; gap: 6px; color: #e6eef8 !important; font-weight: 400 !important; font-size: 14.5px; line-height: 1.45; transition: color .25s, text-shadow .25s; }
 .site-footer .wa-link svg { width: 16px !important; height: 16px !important; flex-shrink: 0; }
