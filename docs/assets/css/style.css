@@ -72,6 +72,11 @@ a { color: inherit; }
 .menu li:last-child a::after { right: 0; }
 .menu a:hover::after, .menu a[aria-current="page"]::after { transform: scaleX(1); }
 .menu a[aria-current="page"] { color: var(--giallo); }
+@media (min-width: 881px) {
+  .menu li a[href="clienti.html"] { color: var(--giallo); border: 1.5px solid var(--giallo); border-radius: 999px; margin: 0 8px; transition: background .25s, color .25s; }
+  .menu li a[href="clienti.html"]::after { display: none; }
+  .menu li a[href="clienti.html"]:hover, .menu li a[href="clienti.html"][aria-current="page"] { background: var(--giallo); color: var(--blu-notte, #0b1b3a); }
+}
 .burger { display: none; background: none; border: 0; padding: 8px; cursor: pointer; }
 .burger span { display: block; width: 26px; height: 2px; background: var(--bianco); margin: 6px 0; transition: transform .3s, opacity .3s; }
 .burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
