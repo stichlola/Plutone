@@ -756,7 +756,7 @@ img[src$="logo.webp"] { content: url("../img/logo-trasparente.webp"); background
 @media (max-width: 880px) {
   .hero { min-height: 0; display: block; }
   .hero .container { gap: 0; padding-top: 4px; padding-bottom: 40px; }
-  .hero .hero-logo { width: min(300px, 70%); margin-bottom: -24px; }
+  .hero .hero-logo { width: min(300px, 70%); margin-top: -80px; margin-bottom: -24px; }
   .hero .container > div:first-child { margin-top: 0; }
 }
 
