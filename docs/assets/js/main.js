@@ -116,6 +116,8 @@
   }
 
   var contactEmail = "plutone.treviso@gmail.com";
+  var EN = document.documentElement.lang === "en";
+  var base = EN ? "../" : "";
 
   // Impostazioni dal pannello admin (solo se il sito gira con il server)
   fetch("api/impostazioni").then(function (r) { return r.ok ? r.json() : null; }).then(function (s) {
