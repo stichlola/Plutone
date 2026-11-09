@@ -214,7 +214,7 @@
       }
       if (btn) btn.disabled = true;
       // Con il server attivo i messaggi arrivano nel pannello admin; su hosting statico si usa l'e-mail.
-      fetch("api/messaggi", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ tipo: tipo, campi: campi, sito_web: trap ? trap.value : "" }) })
+      fetch(base + "api/messaggi", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ tipo: tipo, campi: campi, sito_web: trap ? trap.value : "" }) })
         .then(function (r) {
           if (r.ok) return done(true);
           if (r.status === 404 || r.status === 405) return viaMail();
