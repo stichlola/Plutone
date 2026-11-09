@@ -245,6 +245,43 @@
   }
   document.querySelectorAll("[data-spazio]").forEach(bindDettagli);
 
+  // Consenso cookie + Microsoft Clarity (heatmap): parte solo dopo l'accettazione
+  var CLARITY_ID = "x6jxy8fhov", CONSENT_KEY = "plutone_consent";
+  function getConsent() { try { return localStorage.getItem(CONSENT_KEY); } catch (e) { return null; } }
+  function setConsent(v) { try { localStorage.setItem(CONSENT_KEY, v); } catch (e) {} }
+  function loadClarity() {
+    if (window.clarity && window.clarity.q === undefined && document.getElementById("clarity-tag")) return;
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+      t = l.createElement(r); t.async = 1; t.id = "clarity-tag"; t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", CLARITY_ID);
+  }
+  function showBanner() {
+    if (document.getElementById("cookie-banner")) return;
+    if (!document.getElementById("cookie-style")) {
+      var st = document.createElement("style"); st.id = "cookie-style";
+      st.textContent = "#cookie-banner{position:fixed;left:16px;right:16px;bottom:16px;max-width:560px;margin:0 auto;background:#0b1a3a;background:var(--navy,#0b1a3a);color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:18px 20px;z-index:9999;box-shadow:0 10px 30px rgba(0,0,0,.35);font-size:.92rem;line-height:1.5}" +
+        "#cookie-banner p{margin:0 0 12px;color:#fff}#cookie-banner a{color:#ffd54a;text-decoration:underline}" +
+        "#cookie-banner .cb-row{display:flex;gap:10px;flex-wrap:wrap}" +
+        "#cookie-banner button{font:inherit;font-weight:600;cursor:pointer;border-radius:999px;padding:9px 20px;border:1.5px solid #ffd54a}" +
+        "#cookie-banner .cb-yes{background:#ffd54a;color:#0b1a3a}#cookie-banner .cb-no{background:transparent;color:#ffd54a}";
+      document.head.appendChild(st);
+    }
+    var b = document.createElement("div");
+    b.id = "cookie-banner"; b.setAttribute("role", "dialog"); b.setAttribute("aria-label", "Cookie");
+    b.innerHTML = EN
+      ? '<p>We use Microsoft Clarity, an analytics tool with cookies, to understand how the site is used (heatmaps and anonymous sessions). It starts only if you accept. <a href="privacy.html#cookie">Cookie Policy</a></p><div class="cb-row"><button type="button" class="cb-yes">Accept</button><button type="button" class="cb-no">Decline</button></div>'
+      : '<p>Usiamo Microsoft Clarity, uno strumento di analisi con cookie, per capire come viene usato il sito (mappe di calore e sessioni anonime). Parte solo se accetti. <a href="privacy.html#cookie">Cookie Policy</a></p><div class="cb-row"><button type="button" class="cb-yes">Accetta</button><button type="button" class="cb-no">Rifiuta</button></div>';
+    document.body.appendChild(b);
+    b.querySelector(".cb-yes").addEventListener("click", function () { setConsent("yes"); b.remove(); loadClarity(); });
+    b.querySelector(".cb-no").addEventListener("click", function () { setConsent("no"); b.remove(); });
+  }
+  if (getConsent() === "yes") loadClarity(); else if (getConsent() !== "no") showBanner();
+  document.querySelectorAll("[data-cookie-settings]").forEach(function (el) {
+    el.addEventListener("click", function (e) { e.preventDefault(); try { localStorage.removeItem(CONSENT_KEY); } catch (x) {} showBanner(); });
+  });
+
   // Year
   document.querySelectorAll("[data-year]").forEach(function (el) { el.textContent = new Date().getFullYear(); });
 })();
