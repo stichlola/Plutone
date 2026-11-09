@@ -589,7 +589,7 @@ sup.ai { color: var(--azzurro); font-size: .7em; margin-left: 1px; }
 
 /* Logo arco: il suo sfondo si fonde con il blu del sito (nessun quadrato visibile) */
 /* Il logo è mostrato come SVG trasparente (arco + luce), senza quadrato di sfondo */
-img[src$="logo.webp"] { content: url("../img/logo-trasparente.webp"); background: none; }
+img[src$="logo.webp"] { content: url("../img/logo-trasparente.svg"); background: none; }
 /* il logo grande resta fermo (non fluttua) e non cambia luminosità */
 .hero-logo { animation: none; }
 .hero-logo img { animation: none; filter: none; }
