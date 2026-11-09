@@ -758,6 +758,7 @@ img[src$="logo.webp"] { content: url("../img/logo-trasparente.webp"); background
   .hero .container { gap: 0; padding-top: 4px; padding-bottom: 40px; }
   .hero .hero-logo { width: min(300px, 70%); margin-top: -80px; margin-bottom: 16px; }
   .hero .container > div:first-child { margin-top: 0; }
+  .hero h1, .hero .tagline { text-align: center; }
 }
 
 /* home inglese: lo slogan è più lungo dell'italiano, quindi lo riduco per occupare la stessa larghezza e tenere uguale l'altezza del blocco (e dell'arco) */
