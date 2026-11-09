@@ -8,9 +8,44 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/"/>
   </url>
-  <url><loc>https://plutone.vercel.app/clienti.html</loc></url>
-  <url><loc>https://plutone.vercel.app/proprietari.html</loc></url>
-  <url><loc>https://plutone.vercel.app/mission.html</loc></url>
-  <url><loc>https://plutone.vercel.app/faq.html</loc></url>
-  <url><loc>https://plutone.vercel.app/privacy.html</loc></url>
+  <url><loc>https://plutone.vercel.app/clienti.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/clienti.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/clienti.html"/>
+  </url>
+  <url><loc>https://plutone.vercel.app/en/clienti.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/clienti.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/clienti.html"/>
+  </url>
+  <url><loc>https://plutone.vercel.app/proprietari.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/proprietari.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/proprietari.html"/>
+  </url>
+  <url><loc>https://plutone.vercel.app/en/proprietari.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/proprietari.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/proprietari.html"/>
+  </url>
+  <url><loc>https://plutone.vercel.app/mission.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/mission.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/mission.html"/>
+  </url>
+  <url><loc>https://plutone.vercel.app/en/mission.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/mission.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/mission.html"/>
+  </url>
+  <url><loc>https://plutone.vercel.app/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/faq.html"/>
+  </url>
+  <url><loc>https://plutone.vercel.app/en/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/faq.html"/>
+  </url>
+  <url><loc>https://plutone.vercel.app/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/privacy.html"/>
+  </url>
+  <url><loc>https://plutone.vercel.app/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/privacy.html"/>
+  </url>
 </urlset>
