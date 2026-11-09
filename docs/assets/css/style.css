@@ -637,6 +637,11 @@ img[src$="logo.webp"] { content: url("../img/logo-trasparente.webp"); background
 .brand { flex-shrink: 0; margin-right: 24px; }
 .menu { flex-shrink: 1; }
 .site-header .container { max-width: 1400px; }
+/* computer: logo e menu vicini, centrati nell'intestazione */
+@media (min-width: 881px) {
+  .nav { justify-content: center; }
+  .brand { margin-right: 56px; }
+}
 @media (min-width: 1181px) and (max-width: 1500px) {
   .menu a { padding: 4px 18px; font-size: 16px; letter-spacing: .06em; }
   .menu a::after { left: 18px; right: 18px; }
