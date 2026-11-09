@@ -636,11 +636,11 @@ img[src$="logo.webp"] { content: url("../img/logo-trasparente.webp"); background
 .menu a { white-space: nowrap; }
 .brand { flex-shrink: 0; margin-right: 24px; }
 .menu { flex-shrink: 1; }
-.site-header .container { max-width: 1400px; }
-/* computer: logo e menu vicini, centrati nell'intestazione */
+/* intestazione e hero hanno la stessa larghezza: il menu parte sopra la P di Plutone e finisce al bordo destro dell'arco */
+.site-header .container, .hero .container { max-width: 1400px; }
 @media (min-width: 881px) {
-  .nav { justify-content: center; }
-  .brand { margin-right: 56px; }
+  .nav { justify-content: space-between; }
+  .brand { margin-right: 24px; }
 }
 @media (min-width: 1181px) and (max-width: 1500px) {
   .menu a { padding: 4px 18px; font-size: 16px; letter-spacing: .06em; }
