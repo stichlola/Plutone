@@ -48,4 +48,5 @@
     <xhtml:link rel="alternate" hreflang="it" href="https://plutone.vercel.app/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://plutone.vercel.app/en/privacy.html"/>
   </url>
+  <url><loc>https://plutone.vercel.app/stories.html</loc></url>
 </urlset>
