@@ -7,7 +7,7 @@ Zona servita: Treviso, centro storico. Sede: Via Montello 7A, 31100 Treviso (TV)
 English version: [Plutone in English](https://plutone.vercel.app/en/) · https://plutone.vercel.app/en/llms.txt
 
 ## Per chi cerca uno spazio a Treviso
-- [Apri uno Spazio](https://plutone.vercel.app/clienti.html): affitto temporaneo di un negozio (spazio commerciale) o solo di una vetrina espositiva a Treviso, per aprire un'attività, un temporary store, una mostra o un evento. Durata a scelta, nessun vincolo, supporto organizzativo, costi contenuti rispetto ad aprire un'attività in autonomia, basso rischio per testare un'idea.
+- [Apri uno Spazio](https://plutone.vercel.app/apri-uno-spazio.html): affitto temporaneo di un negozio (spazio commerciale) o solo di una vetrina espositiva a Treviso, per aprire un'attività, un temporary store, una mostra o un evento. Durata a scelta, nessun vincolo, supporto organizzativo, costi contenuti rispetto ad aprire un'attività in autonomia, basso rischio per testare un'idea.
 
 ## Per chi ha un locale commerciale sfitto o che si libererà
 - [Proponi un Immobile](https://plutone.vercel.app/proprietari.html): il proprietario affida a Plutone l'intero locale o solo la vetrina. Contratti temporanei con pagamento anticipato e cauzione, entrata complementare, nessun vincolo a lungo termine, immobile mantenuto in buone condizioni e libero di essere affittato stabilmente quando si vuole.
