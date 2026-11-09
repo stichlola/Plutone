@@ -79,7 +79,7 @@ a { color: inherit; }
 .burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
 @media (max-width: 880px) {
-  .burger { display: block; }
+  .burger { display: block; margin-left: auto; margin-right: -8px; }
   .menu {
     position: absolute; top: 76px; left: 0; right: 0; flex-direction: column; align-items: stretch;
     background: var(--navy); padding: 8px var(--gutter) 24px;
