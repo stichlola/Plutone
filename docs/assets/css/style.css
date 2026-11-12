@@ -782,3 +782,13 @@ html[lang="en"] .hero .tagline { font-size: clamp(18px, 2.6vw, 35px); white-spac
 @media (max-width: 880px) {
   html[lang="en"] .hero .tagline { white-space: normal; }
 }
+
+/* avviso "servizio in fase di avvio": barra in alto e riquadro sotto il titolo */
+.avvio-bar { background: var(--giallo); color: var(--navy); text-align: center; padding: 9px var(--gutter); font-family: var(--f-label); font-size: 15px; letter-spacing: .03em; line-height: 1.4; }
+.avvio-bar p { margin: 0; }
+.avvio-bar a { color: var(--navy); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.avvio-bar a:hover { color: var(--navy-3); }
+.avvio-box { margin-top: 30px; max-width: 560px; padding: 22px 26px 24px; border-radius: var(--radius); border: 1.5px solid var(--giallo); background: rgba(255,218,106,.1); box-shadow: 0 0 30px -8px rgba(255,218,106,.45); }
+.avvio-box h2 { font-family: var(--f-display); font-weight: 400; font-size: clamp(24px, 3vw, 30px); color: var(--giallo); margin: 0 0 8px; line-height: 1.15; }
+.avvio-box p, .page-hero .avvio-box p { margin: 0 0 16px; color: #e6eef8; font-size: 16px; max-width: none; }
+@media (max-width: 880px) { .avvio-box { margin-left: auto; margin-right: auto; text-align: center; } }
