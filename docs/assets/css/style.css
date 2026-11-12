@@ -146,6 +146,8 @@ a { color: inherit; }
 
 /* ---------- Generic sections ---------- */
 section { padding: clamp(64px, 9vw, 110px) 0; }
+/* testo lungo seguito dal blocco CTA: evita il doppio spazio */
+section:has(> .prose) + section.bg-crema { padding-top: 0; }
 .bg-crema { background: var(--crema); }
 .bg-ghiaccio { background: var(--ghiaccio); }
 .bg-bianco { background: var(--bianco); }
