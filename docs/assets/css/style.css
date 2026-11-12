@@ -792,3 +792,9 @@ html[lang="en"] .hero .tagline { font-size: clamp(18px, 2.6vw, 35px); white-spac
 .avvio-box h2 { font-family: var(--f-display); font-weight: 400; font-size: clamp(24px, 3vw, 30px); color: var(--giallo); margin: 0 0 8px; line-height: 1.15; }
 .avvio-box p, .page-hero .avvio-box p { margin: 0 0 16px; color: #e6eef8; font-size: 16px; max-width: none; }
 @media (max-width: 880px) { .avvio-box { margin-left: auto; margin-right: auto; text-align: center; } }
+/* home (computer): il riquadro sta in una riga sotto il testo, così non allunga il blocco e l'arco resta della misura giusta */
+@media (min-width: 881px) {
+  .hero .container > .avvio-box { grid-column: 1; grid-row: 2; align-self: start; margin-top: -10px; margin-bottom: 40px; }
+  .hero .container > .hero-logo { grid-column: 2; grid-row: 1; }
+  .hero .container > div:first-child { grid-column: 1; grid-row: 1; }
+}
