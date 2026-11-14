@@ -71,20 +71,5 @@
   </div>
 </main>
 
-<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
-<script>
-(function () {
-  var box = document.getElementById("qr");
-  try {
-    var qr = qrcode(0, "M");
-    qr.addData("https://linktr.ee/plutone.treviso");
-    qr.make();
-    var svg = qr.createSvgTag({ cellSize: 4, margin: 0, scalable: true });
-    box.innerHTML = svg.replace(/fill="black"/g, 'fill="#07284a"');
-  } catch (e) {
-    box.innerHTML = '<img alt="" src="https://api.qrserver.com/v1/create-qr-code/?size=400x400&margin=0&color=07284a&data=https%3A%2F%2Flinktr.ee%2Fplutone.treviso">';
-  }
-})();
-</script>
 </body>
 </html>
