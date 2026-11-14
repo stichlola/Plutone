@@ -17,7 +17,11 @@
   .bv-card { position: relative; overflow: hidden; width: 100%; max-width: 420px; background: var(--navy); color: var(--bianco); border: 1px solid rgba(97,160,229,.35); border-radius: 28px; box-shadow: 0 30px 70px -20px rgba(0,0,0,.6); text-align: center; }
   .bv-card::before { content: ""; position: absolute; left: 50%; top: -120px; width: 480px; height: 480px; transform: translateX(-50%); border-radius: 50%; background: radial-gradient(circle, rgba(255,218,106,.5), rgba(255,218,106,0) 62%); pointer-events: none; }
   .bv-top { position: relative; padding: 44px 28px 26px; }
-  .bv-top img { width: 130px; height: auto; margin: 0 auto 10px; }
+  .bv-top .bv-arco { width: 250px; max-width: 80%; margin: 0 auto 8px; justify-self: auto; }
+  .bv-social { position: relative; display: flex; justify-content: center; gap: 14px; padding: 18px 26px 6px; border-top: 1px solid rgba(97,160,229,.3); margin: 0 26px; }
+  .bv-social a { width: 50px; height: 50px; border-radius: 50%; display: grid; place-items: center; color: #fff; border: 1.5px solid rgba(255,255,255,.35); transition: color .25s, background .25s, border-color .25s, box-shadow .25s, transform .25s; }
+  .bv-social svg { width: 23px; height: 23px; }
+  .bv-social a:hover, .bv-social a:focus-visible { color: var(--navy); background: var(--giallo); border-color: var(--giallo); transform: translateY(-3px); box-shadow: 0 0 0 3px rgba(255,218,106,.3), 0 0 22px 4px rgba(255,218,106,.55); }
   .bv-top h1 { font-family: var(--f-display); font-weight: 400; font-size: 44px; letter-spacing: .06em; margin: 0; line-height: 1.05; }
   .bv-top .rule { height: 3px; width: 120px; background: var(--bianco); border-radius: 2px; margin: 16px auto 14px; }
   .bv-top p { font-family: var(--f-label); letter-spacing: .12em; color: var(--giallo); margin: 0; font-size: 17px; }
