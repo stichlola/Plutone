@@ -59,8 +59,9 @@
     .bv-list a, .bv-list .row { font-size: 17px; padding: 13px 0; }
     .bv-qr { grid-area: qr; align-self: stretch; padding: 24px 44px; border-left: 1px solid rgba(97,160,229,.3); border-top: 1px solid rgba(97,160,229,.3); display: grid; grid-template-columns: 170px 1fr; column-gap: 28px; align-items: center; text-align: left; }
     .bv-qr .box { width: 170px; padding: 14px; border-radius: 18px; margin: 0; grid-row: 1 / 3; }
-    .bv-qr p { margin: 0 0 8px; align-self: end; font-size: 15px; line-height: 1.5; }
-    .bv-qr a.url { align-self: start; }
+    .bv-qr p, .bv-qr a.url, .bv-savebox { display: none; }
+    .bv-qr { display: flex; justify-content: center; align-items: center; }
+    .bv-qr .box { margin: 0 auto; }
   }
 </style>
 </head>
