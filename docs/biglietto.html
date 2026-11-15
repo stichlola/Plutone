@@ -45,16 +45,22 @@
   /* Versione desktop: biglietto orizzontale a due colonne */
   @media (min-width: 900px) {
     body.bv { align-items: center; padding: 48px 32px; }
-    .bv-card { max-width: 980px; display: grid; grid-template-columns: 1fr 1fr; grid-template-areas: "top list" "social list" "save qr"; align-items: start; }
-    .bv-card::before { left: 25%; }
-    .bv-top { grid-area: top; padding: 56px 28px 26px; }
-    .bv-top .bv-arco { width: 280px; }
-    .bv-social { grid-area: social; padding-bottom: 30px; }
-    .bv-savebox { grid-area: save; padding: 6px 28px 48px; }
-    .bv-list { grid-area: list; padding: 48px 44px 8px; border-left: 1px solid rgba(97,160,229,.3); align-self: stretch; }
-    .bv-list a, .bv-list .row { font-size: 17px; }
-    .bv-qr { grid-area: qr; padding: 28px 28px 44px; border-left: 1px solid rgba(97,160,229,.3); align-self: stretch; }
-    .bv-qr .box { width: 200px; }
+    body.bv { padding: 32px; }
+    .bv-card { max-width: 960px; display: grid; grid-template-columns: 5fr 6fr; grid-template-areas: "top list" "social qr" "save qr"; align-items: start; }
+    .bv-card::before { left: 20.8%; top: -140px; }
+    .bv-top { grid-area: top; padding: 40px 28px 20px; align-self: center; }
+    .bv-top .bv-arco { width: 210px; margin-bottom: 4px; }
+    .bv-top h1 { font-size: 40px; }
+    .bv-top .rule { margin: 12px auto 10px; }
+    .bv-social { grid-area: social; padding: 16px 26px 6px; }
+    .bv-savebox { grid-area: save; padding: 0 28px 32px; }
+    .bv-save { margin-top: 12px; }
+    .bv-list { grid-area: list; padding: 28px 44px 10px; border-left: 1px solid rgba(97,160,229,.3); align-self: stretch; display: flex; flex-direction: column; justify-content: center; }
+    .bv-list a, .bv-list .row { font-size: 17px; padding: 13px 0; }
+    .bv-qr { grid-area: qr; align-self: stretch; padding: 24px 44px; border-left: 1px solid rgba(97,160,229,.3); border-top: 1px solid rgba(97,160,229,.3); display: grid; grid-template-columns: 170px 1fr; column-gap: 28px; align-items: center; text-align: left; }
+    .bv-qr .box { width: 170px; padding: 14px; border-radius: 18px; margin: 0; grid-row: 1 / 3; }
+    .bv-qr p { margin: 0 0 8px; align-self: end; font-size: 15px; line-height: 1.5; }
+    .bv-qr a.url { align-self: start; }
   }
 </style>
 </head>
