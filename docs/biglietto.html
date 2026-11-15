@@ -41,6 +41,21 @@
   .bv-qr p { font-family: var(--f-label); letter-spacing: .08em; margin: 18px 0 4px; font-size: 16px; }
   .bv-qr a.url { color: var(--giallo); font-size: 14px; letter-spacing: .04em; word-break: break-all; }
   .bv-save { margin-top: 18px; padding: 11px 22px; font-size: 15px; }
+
+  /* Versione desktop: biglietto orizzontale a due colonne */
+  @media (min-width: 900px) {
+    body.bv { align-items: center; padding: 48px 32px; }
+    .bv-card { max-width: 980px; display: grid; grid-template-columns: 1fr 1fr; grid-template-areas: "top list" "social list" "save qr"; align-items: start; }
+    .bv-card::before { left: 25%; }
+    .bv-top { grid-area: top; padding: 56px 28px 26px; }
+    .bv-top .bv-arco { width: 280px; }
+    .bv-social { grid-area: social; padding-bottom: 30px; }
+    .bv-savebox { grid-area: save; padding: 6px 28px 48px; }
+    .bv-list { grid-area: list; padding: 48px 44px 8px; border-left: 1px solid rgba(97,160,229,.3); align-self: stretch; }
+    .bv-list a, .bv-list .row { font-size: 17px; }
+    .bv-qr { grid-area: qr; padding: 28px 28px 44px; border-left: 1px solid rgba(97,160,229,.3); align-self: stretch; }
+    .bv-qr .box { width: 200px; }
+  }
 </style>
 </head>
 <body class="bv">
