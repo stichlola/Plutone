@@ -568,7 +568,7 @@ sup.ai { color: var(--azzurro); font-size: .7em; margin-left: 1px; }
 .faq-group h2 .c-ico svg { width: 22px; height: 22px; }
 
 /* Footer v2 */
-.foot-grid.v2 { grid-template-columns: 1.3fr 1fr 1fr .9fr 1.2fr; }
+.foot-grid.v2 { grid-template-columns: 1.3fr 1fr 1fr 1.2fr; }
 .foot-grid.v2 .foot-brand { flex-direction: column; gap: 14px; }
 .foot-grid.v2 .foot-brand img { width: 220px; }
 .foot-grid.v2 .foot-brand p { color: #cfe0f4; font-size: 14.5px; margin: 0; }
