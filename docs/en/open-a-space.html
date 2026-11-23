@@ -86,60 +86,14 @@
 </section>
 
 <section class="bg-crema" id="contatti" aria-label="Request information" style="scroll-margin-top:60px">
-  <div class="container contact-split">
-    <div class="form-card reveal">
-      <div class="head"><span class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><h2>Request Information or Spaces</h2></div>
-      <p>Fill in the form to introduce yourself and check availability. No strings attached.</p>
+  <div class="container">
+    <div class="mail-block reveal">
+      <span class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+      <h2>Write to us at</h2>
+      <a class="mail-big" href="mailto:plutone.treviso@gmail.com?subject=Space%20request">plutone.treviso@gmail.com</a>
+      <p>Tell us about your idea or ask about available spaces. No strings attached.</p>
       <p class="faq-link">Any doubts? <a href="faq.html">Read our FAQ</a>.</p>
-      <form class="js-mail" data-subject="Space request" novalidate>
-        <input type="text" name="sito_web" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;height:0;width:0;opacity:0">
-        <div class="field-row">
-          <div class="field"><label for="c-nome">Full name or business name*</label><input id="c-nome" required autocomplete="organization" data-label="Company / Brand" data-subject><div class="err">Enter the company or brand name.</div></div>
-          <div class="field"><label for="c-email">E-mail address*</label><input id="c-email" type="email" required autocomplete="email" data-label="E-mail"><div class="err">Enter a valid e-mail address.</div></div>
-        </div>
-        <div class="field-row">
-          <div class="field"><label for="c-formato">Format of interest*</label>
-            <select id="c-formato" name="formato" required data-label="Format">
-              <option value="" disabled selected>Select…</option>
-              <option value="spazio">Full Retail Space</option>
-              <option value="vetrina">Window Only</option>
-              <option value="entrambi">Both / To be assessed</option>
-              <option value="info">I just want information</option>
-            </select><div class="err">Choose a format.</div></div>
-          <div class="field"><label for="c-durata">Estimated duration*</label>
-            <select id="c-durata" name="durata" required data-label="Duration">
-              <option value="" disabled selected>Select…</option>
-              <option value="giorni">A few days (e.g. a weekend)</option>
-              <option value="settimana">1 Week</option>
-              <option value="mesi">One or more months</option>
-              <option value="indeciso">I haven't decided yet</option>
-              <option value="info">I just want information</option>
-            </select><div class="err">Give an approximate duration.</div></div>
-        </div>
-        <input type="hidden" id="c-spazio" data-label="Space of interest">
-        <div class="field"><label for="c-msg">Message*</label><textarea id="c-msg" required placeholder="Tell us about your idea or ask for information..." data-label="Message"></textarea><div class="err">Tell us something about your idea.</div></div>
-        <label class="check"><input type="checkbox" checked data-label="Newsletter subscription"> <span>I would like to subscribe to the newsletter to stay updated on Plutone news.<small>Filling in this form creates no obligation. Your data will be used only to process this request and manage communication, in full compliance with the <a href="privacy.html">Privacy Policy</a>.</small></span></label>
-        <button class="btn btn-navy" type="submit">Send Request <span class="arrow">&rarr;</span></button>
-      </form>
-      <div class="form-done" role="status">
-        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#3cc027" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin:auto"><circle cx="12" cy="12" r="10"/><path d="M7 12.5l3 3 7-7"/></svg>
-        <p class="big">Thank you!</p>
-        <p>Your e-mail program has opened with the message already filled in: press send and we will reply as soon as possible.<br>If it did not open, write to us at <a href="mailto:plutone.treviso@gmail.com">plutone.treviso@gmail.com</a>.</p>
-      </div>
     </div>
-
-    <aside class="newsletter-box reveal" id="newsletter" style="scroll-margin-top:100px">
-      <p class="eyebrow">Not ready to open yet?</p>
-      <h2>Stay updated!</h2>
-      <p>Subscribe to our Clients Newsletter. We will send you exclusive news on newly available spaces, invitations to events and market reports on the formats tested downtown.</p>
-      <form class="js-mail" data-subject="Clients Newsletter subscription" novalidate>
-        <input type="text" name="sito_web" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;height:0;width:0;opacity:0">
-        <div class="field"><label for="n-nome">Full name (optional)</label><input id="n-nome" autocomplete="name" data-label="Full name" data-subject></div>
-        <div class="field"><label for="n-email">E-mail address*</label><input id="n-email" type="email" required autocomplete="email" data-label="E-mail"><div class="err">Enter a valid e-mail address.</div></div>
-        <button class="btn btn-giallo" type="submit">Stay Updated <span class="arrow">&rarr;</span></button>
-      </form>
-      <div class="form-done" role="status"><p class="big">Thank you!</p><p>Confirm sending the e-mail that has just opened.</p></div>
-    </aside>
   </div>
 </section>
 
